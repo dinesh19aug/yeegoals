@@ -16,4 +16,4 @@ jobs:
           path: flows
           message: "Render PlantUML files"
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
