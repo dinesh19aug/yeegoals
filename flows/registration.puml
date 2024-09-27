@@ -23,7 +23,7 @@ package "registration flow" {
             "first name": "---",
             "last name": "---",
             "email": "---",
-            "phone": "---",
+            "phonenumber": "---",
             "business name": "---",
             "business address": "---"
         }
