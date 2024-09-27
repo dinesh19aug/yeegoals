@@ -19,4 +19,4 @@
 - Set profile settings. Ex:min loan/industry type
 - Search/view owners
 
-![activity.png](../../resources/assets/activity.png)
+![activity.png](../../resources/assets/activities/activity.png)

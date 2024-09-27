@@ -1,1 +1,1 @@
-java -jar resources/plantuml-1.2024.7.jar flows/puml -o ../../resources/assets
+java -jar resources/plantuml-1.2024.7.jar flows/puml/* -o ../../../resources/assets/activities
