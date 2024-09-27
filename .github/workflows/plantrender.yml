@@ -1,19 +1,10 @@
-name: generate plantuml
-on: push
 jobs:
-  generate_plantuml:
-    runs-on: ubuntu-latest
-    name: plantuml
+  build:
     steps:
-      - name: checkout
-        uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+      - name: generate and commit diagrams
+        uses: abekoh/commit-plantuml-action@1.0.3
         with:
-          fetch-depth: 1
-      - name: plantuml
-        id: plantuml
-        uses: grassedge/generate-plantuml-action@v1.5
-        with:
-          path: flows
-          message: "Render PlantUML files"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          botEmail: ${{ secrets.BOT_EMAIL }}
+          botGithubToken: ${{ secrets.GITHUB_TOKEN }}
+          enableReviewComment: true
