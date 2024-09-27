@@ -11,7 +11,7 @@ skinparam actorStyle awesome
 rectangle "COMMON ACTIONS" as ca #orange{
     usecase (Sign up) as signup
     usecase (Chat with banker after connect) as chat
-    usecase (send Connection requests) as connect #red
+    usecase (send Connection request) as connect #red
     usecase (Upload loan documents) as uld
     usecase (Download loan documents) as dld
     usecase (Review application status) as ras
