@@ -1,0 +1,44 @@
+@startuml
+/'Color scheme'/
+skinparam actorStyle awesome
+
+/' Actors '/
+:Business Owner: as owner #LightGreen
+:Banker: as banker #LightBlue
+
+/'Use cases'/
+
+rectangle "COMMON ACTIONS" as ca #orange{
+    usecase (Sign up) as signup
+    usecase (Chat with banker after connect) as chat
+    usecase (send Connection requests) as connect #red
+    usecase (Upload/Download loan documents) as uld
+
+    usecase (Review application status) as ras
+
+    note  "Can business owners reach out to banker?" as n1
+    connect .. n1
+}
+/'Packages'/
+
+rectangle "BUSINESS OWNER ACTIONS" as boa #LightGreen{
+    (Start loan application)
+    (Search/view bankers)
+    (Add Rating to banker and comment)
+
+}
+
+rectangle "BANKER ACTIONS"  as ba #LightBlue{
+    (Set profile settings - min loan/industry type)
+    (Search/owners)
+
+}
+
+/'Connections'/
+
+owner -left--> boa
+owner -down--> ca
+
+banker -up-> ca
+banker -left-> ba
+@enduml

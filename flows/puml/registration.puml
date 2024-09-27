@@ -1,0 +1,46 @@
+@startuml
+allowmixing
+skinparam usecase {
+BackgroundColor DarkSeaGreen
+BorderColor DarkSlateGray
+BackgroundColor<< Main >> YellowGreen
+BorderColor<< Main >> YellowGreen
+ArrowColor Olive
+ActorBorderColor black
+ActorFontName Courier
+ActorBackgroundColor<< Human >> Gold
+}
+
+package "registration flow" {
+  skinparam actorStyle awesome
+  package Users {
+    actor :Business owner: as owner #LightGreen
+    actor :Banker: as banker #LightBlue
+  }
+
+    package "Owner Signup" as ownersignup #LightGreen{
+        json Owner_Form {
+            "first name": "---",
+            "last name": "---",
+            "email": "---",
+            "phonenumber": "---",
+            "business name": "---",
+            "business address": "---"
+        }
+    }
+
+    package "Banker Signup" as bankersignup #LightBlue{
+        json Banker_form{
+            "first name": "---",
+            "last name": "---",
+            "email": "---",
+            "phone": "---",
+            "business name": "---",
+            "business address": "---"
+        }
+    }
+}
+left to right direction
+owner -down-> ownersignup
+banker -down-> bankersignup
+@enduml
