@@ -11,14 +11,14 @@ ActorFontName Courier
 ActorBackgroundColor<< Human >> Gold
 }
 
-package "registration flow"{
+package "registration flow" {
   skinparam actorStyle awesome
-  package Users{
-    actor :Business owner: as owner
-    actor :Banker: as banker
+  package Users {
+    actor :Business owner: as owner #LightGreen
+    actor :Banker: as banker #LightBlue
   }
 
-    package "Owner Signup" as ownersignup{
+    package "Owner Signup" as ownersignup #LightGreen{
         json Owner_Form {
             "first name": "---",
             "last name": "---",
@@ -29,7 +29,7 @@ package "registration flow"{
         }
     }
 
-    package "Banker Signup" as bankersignup{
+    package "Banker Signup" as bankersignup #LightBlue{
         json Banker_form{
             "first name": "---",
             "last name": "---",
