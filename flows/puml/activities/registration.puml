@@ -24,8 +24,8 @@ package "registration flow" {
             "last name": "---",
             "email": "---",
             "phonenumber": "---",
-            "business name": "---",
-            "business address": "---"
+            "business name": "---"
+
         }
     }
 
