@@ -1,0 +1,34 @@
+@startuml
+actor "Business Owner" as BO
+actor "Banker" as B
+participant "JWT Service" as JWT
+participant "Loan Application Service" as LAS
+participant "Settings Service" as SS
+participant "Banker Directory" as BD
+participant "Chat Service" as CS
+
+BO -> JWT: Sign Up (Business Owner)
+JWT -> BO: JWT Token
+BO -> LAS: Create Loan Application
+LAS -> BO: Loan Application Confirmation
+
+B -> JWT: Sign Up (Banker)
+JWT -> B: JWT Token
+B -> SS: Update Filter Settings
+SS -> B: Filter Settings Updated
+
+BO -> BD: View Available Bankers
+BD -> BD: Filter Bankers Based on Criteria
+BD -> BO: Show Available Bankers
+
+BO -> B: Request to Connect
+B -> BO: Accept Connection
+
+alt Banker is Available
+    BO -> CS: Initiate Chat
+    CS -> B: Chat Request
+    B -> BO: Respond to Chat
+else Banker is Offline
+    CS -> BO: Banker is Offline
+end
+@enduml

@@ -390,8 +390,8 @@
     },
     {
       "type": "text",
-      "version": 1112,
-      "versionNonce": 1248453609,
+      "version": 1113,
+      "versionNonce": 1969904718,
       "isDeleted": false,
       "id": "EhllR88UgcOGGjD96QtaZ",
       "fillStyle": "hachure",
@@ -411,7 +411,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1727467851941,
+      "updated": 1727745438896,
       "link": null,
       "locked": false,
       "fontSize": 15.207448282594164,
@@ -422,7 +422,7 @@
       "containerId": null,
       "originalText": "Connecting small business owner with bankers",
       "lineHeight": 1.2555894754182269,
-      "baseline": 13
+      "baseline": 14
     },
     {
       "type": "rectangle",
@@ -457,8 +457,8 @@
     },
     {
       "type": "text",
-      "version": 1348,
-      "versionNonce": 825720521,
+      "version": 1349,
+      "versionNonce": 842192786,
       "isDeleted": false,
       "id": "aQdpjIzbl73G8V1SvSEx_",
       "fillStyle": "hachure",
@@ -480,7 +480,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1727467851941,
+      "updated": 1727745438896,
       "link": null,
       "locked": false,
       "fontSize": 12.155887177992845,
@@ -491,7 +491,7 @@
       "containerId": null,
       "originalText": "Small business owner",
       "lineHeight": 1.2779173661674506,
-      "baseline": 10
+      "baseline": 11
     },
     {
       "type": "text",
@@ -562,8 +562,8 @@
     },
     {
       "type": "text",
-      "version": 1215,
-      "versionNonce": 1440424073,
+      "version": 1216,
+      "versionNonce": 1622516366,
       "isDeleted": false,
       "id": "xBMbJ9H7DLalC0wmAJqiA",
       "fillStyle": "hachure",
@@ -585,7 +585,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1727467851941,
+      "updated": 1727745438896,
       "link": null,
       "locked": false,
       "fontSize": 12.155887177992845,
@@ -596,7 +596,7 @@
       "containerId": null,
       "originalText": "Banker",
       "lineHeight": 1.2779173661674506,
-      "baseline": 10
+      "baseline": 11
     },
     {
       "id": "ZUSDJyPEb2KHEI9b9R1u7",
@@ -646,11 +646,11 @@
       "frameId": null,
       "roundness": null,
       "seed": 1858876425,
-      "version": 517,
-      "versionNonce": 9971561,
+      "version": 518,
+      "versionNonce": 1758860626,
       "isDeleted": false,
       "boundElements": null,
-      "updated": 1727467851941,
+      "updated": 1727745438897,
       "link": null,
       "locked": false,
       "text": "A specialized B2B platform that helps \nsmall businesses access banking products, \nconnect with business and commercial bankers, \nand promote their services to \nother entrepreneurs in their industry.",
@@ -658,7 +658,7 @@
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
-      "baseline": 120,
+      "baseline": 121,
       "containerId": null,
       "originalText": "A specialized B2B platform that helps \nsmall businesses access banking products, \nconnect with business and commercial bankers, \nand promote their services to \nother entrepreneurs in their industry.",
       "lineHeight": 1.25
@@ -3928,7 +3928,7 @@
   ],
   "appState": {
     "gridSize": null,
-    "viewBackgroundColor": "#fdf8f6"
+    "viewBackgroundColor": "#ffffff"
   },
   "files": {}
 }

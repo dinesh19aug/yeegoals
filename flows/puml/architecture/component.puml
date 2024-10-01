@@ -1,0 +1,76 @@
+@startuml
+skinparam package {
+    BackgroundColor LightGray
+    BorderColor Black
+}
+
+package "Services" {
+    rectangle "Gateway" as GW #LightSlateGray {
+        (Handle Incoming Requests)
+    }
+
+    rectangle "Sign-up Service" as SUS #LightPink {
+        (Handle Sign-up)
+    }
+
+    rectangle "Business Owner Service" as BOS #LightSkyBlue {
+        (Create Loan Application)
+        (Chat)
+        (View Banker's Profile)
+        (Review Application Status)
+    }
+
+    rectangle "Banker Service" as BS #LightGreen {
+        (Update Profile Settings)
+        (Respond to Chat)
+    }
+
+    rectangle "Chat Service" as CS #LightGoldenRodYellow {
+        (Handle Chat)
+    }
+
+    rectangle "Loan Application Service" as LAS #LightSalmon {
+        (Create and Manage Loan Application)
+    }
+
+    rectangle "Banker Directory Service" as BDS #LightCoral {
+        (Search Bankers)
+    }
+}
+
+package "Databases" {
+    rectangle "Business Owner DB" as BODB #LightCyan {
+        "Stores Business Owner's Info"
+        "Loan History"
+    }
+
+    rectangle "Banker DB" as BDB #LightSteelBlue {
+        "Stores Banker Info"
+        "Profile Settings"
+    }
+
+    rectangle "Loan Application DB" as LADB #LavenderBlush {
+        "Stores Loan Applications"
+    }
+
+    rectangle "Chat DB" as CDB #LemonChiffon {
+        "Stores Chat Info"
+        "Conversations"
+    }
+}
+
+GW --> SUS : Forward Sign-up Request
+GW --> BOS : Forward Business Owner Requests
+GW --> BS : Forward Banker Requests
+SUS --> BODB : Store Business Owner Info
+SUS --> BDB : Store Banker Info
+BOS --> BODB : Retrieve Business Owner Info
+BOS --> LAS : Create Loan Application
+LAS --> LADB : Store Loan Applications
+BS --> BDS : Store Profile Settings
+BOS --> BDS : Search for Bankers
+BOS --> CS : Initiate Chat
+CS --> CDB : Store Chat Info
+BS --> CS : Respond to Chat
+
+@enduml

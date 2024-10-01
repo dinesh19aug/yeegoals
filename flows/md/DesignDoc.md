@@ -1,4 +1,5 @@
-# Technical Design Document (Outline Draft)
+# Technical Design Document (Outline Draft - End result)
+#### This is end result, which will be achieved over multiple phase. For MVP 1, see Architecture diag.
 ## 1. Introduction
 - **Purpose**: Describe the purpose of the document.
 - **Scope**: Define the scope of the platform.
